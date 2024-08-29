@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.253);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+.todo-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.input-group{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-group label{
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.input-group input,
+.input-group select{
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#add-task-button{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+#add-task-button:hover{
+    transform: scale(1.1);
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+select:focus{
+    border-color: #28a745;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.308);;
+}
+
+label i,
+h1 i{
+    color: #28a745;
+    transition: transform 0.3s;
+}
+
+label i:hover,
+h1 i:hover{
+    transform: rotate(360deg);
+}
+
+
+h1 i{
+    padding-right: 20px;
+}
+
+label i{
+    padding-right: 15px;
+}
+
+button i{
+    padding-right: 10px;
+}
+
+
+#task-list{
+    list-style: none;
+    padding: 0;
+
+}
+
+#task-list li{
+    background-color: #eee;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+
+#task-list li:hover{
+    background: #ddd;
+}
+
+.task-info{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.task-action{
+    display: flex;
+    gap: 10px;
+}
+
+.delete-button{
+    background: none;
+    border: none;
+    color: royalblue;
+    cursor: pointer;
+    font-size: 20px;
+   
+}
+
+
+#task-list li i{
+    color: #28a745;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.132);
+}
